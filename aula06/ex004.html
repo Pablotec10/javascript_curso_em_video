@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa</title>
+
+   <style>
+       body{
+           background-color: rgb(105, 105, 173);
+           color: white;
+           font: normal 20pt arial;
+       }
+
+       h1{
+           color: rgb(255, 212, 22);
+       }
+   </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>maldição</p>
+     <div id="msg">clique em mim</div>
+    <!-- Os métodos confirm(), alert() e prompt() são usados para exibir uma caixa de diálogo pop-up para o usuário, com o intuito de exibir ou solicitar informações -->
+    <script>
+    //  var nome = prompt ('qual o seu nome?')  //botao perguta ok e cancelar
+    // var idade = prompt ('qual sua idade?')
+//   var idade = confirm ('gosta de jogar?')  // confirmar com botao cancelar e sair
+//       alert ('deseja sair?')  // alerta só ok
+
+       var n1 = Number ( prompt ('digite um numero'))
+       var n2 = Number( prompt ('digite outro numero'))
+        
+        var soma = n1 + n2
+
+        alert ( ` a soma entre  ${n1} e ${n2} é igual ${soma}`)
+
+        var nome = prompt ( 'qual o seu nome')
+        document.write ( `seu nome em maiusculo é ${nome.toUpperCase()} <br>`)
+        document.write (`seu nome tem quantas letras ${nome.length}`)
+        
+       document.write(document.URL)
+        // var n4 = 120.5
+        // n4.toFixed(2)
+     //resultado é 2 casas decimais usando toFixed(2)
+ // pra converter . pra virgula usa n4.toFixed(2).replace('.', ',')
+
+
+        var d = document.getElementById('msg')
+        d.style.background='green'
+     </script>
+   
+</body>
+</html>

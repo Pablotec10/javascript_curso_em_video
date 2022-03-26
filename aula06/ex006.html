@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Soma Javascript</title>
+
+        <style>
+            input {
+                font: normal 16px arial;
+            }
+            #resultado{
+                font: bold 16px arial;
+                margin-top: 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Somando em javascript</h1>
+        <input type="number" id="numero1" name="num1">
+        <input type="number" id="numero2" name="num2">
+        <input type="button" value="somar" onclick="somar()">
+        <div id="resultado"> Resultado</div>
+
+        <script>
+            function somar (){
+
+            var number1 = document.getElementById ('numero1')
+            var number2 = document.getElementById ('numero2')
+            var resultado = document.getElementById('resultado')
+            number1 = Number(numero1.value)
+            number2 = Number (numero2.value)
+           
+           var soma = number1 + number2
+            resultado.innerHTML = `a soma entre ${number1} e ${number2} é ${soma}`
+            
+        }
+        </script>
+    </body>
+</html>

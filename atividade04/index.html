@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Tabuada</h1>
+    </header>
+    <section>
+       <div>
+      <label for="txN1">Número:</label>
+        <input type="number" name="numero" id="numero"> 
+        <input type="button" value="gerar tabuada" onclick="tabuada()">
+        
+        <div>
+          <select name="tabuada" id="seltab" size="10">
+            <option> Digite um número acima</option>
+          </select>
+        </div>
+       
+
+      </div>
+     
+    </section>
+    <footer>
+      <p>cursoemVideo</p>  
+           </footer>
+           <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- O atributo NAME deve ser usado principalmente para identificar campos de formulários. Sempre que realizamos um “submit” de um formulário, o atributo NAME é o identificador dentro de uma requisição GET ou POST no servidor.Vejamos algumas diferenças entre GET e POST: O método GET cria uma seqüência de consulta(query string) e a acrescenta à URL do script no servidor que manipula a solicitação. O método POST cria um par nome/valor que são passados no corpo da mensagem de pedido HTTP. -->

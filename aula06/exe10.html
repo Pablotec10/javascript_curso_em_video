@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>País</h1>
+    Moro no: <input type="text" name="pais" id="pais"> !
+    <input type="button" value="Enter" onclick="Verificar()">
+    <div id="res"></div>
+
+    <script>
+        
+        function Verificar() {
+            var pais = document.querySelector("input#pais")
+            var res = document.querySelector("div#res")
+            var paisC = String(pais.value)
+            res.innerHTML = `Pais digitado: ${paisC}`
+            if (paisC != "Brasil") {
+                res.innerHTML += `<p>Você é estrangeiro</p>`
+            }else {
+                res.innerHTML += `<p>Brasileiro!</p>`
+            }
+
+        }
+        </script>
+</body>
+</html>

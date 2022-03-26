@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título</title>
+    <link rel="stylesheet" href="contar.css">
+</head>
+<body>
+    <header>
+        <h1> Vamos contar</h1>
+    </header>
+    <section>
+       <div>
+      <label for="txN1">inicio:</label>
+        <input type="number" name="inicio" id="txN1"> <!--minimo de valor ano zero-->
+        <p></p>
+        <label>Fim:</label>
+        <input type="number" name="fim" id="txN2">
+        <p></p>
+        <label>Passo:</label>
+       
+        <input type="number" name="passo" id="txPasso">
+         <p> <input type="button" value="contar" onclick="calcular()"></p>
+        </div>
+       
+      <div id="res">
+       contando:
+
+      </div>
+     
+    </section>
+    <footer>
+      <p>cursoemVideo</p>  
+           </footer>
+           <script src="contar.js"></script>
+</body>
+</html>
+
+
+<!-- O atributo NAME deve ser usado principalmente para identificar campos de formulários. Sempre que realizamos um “submit” de um formulário, o atributo NAME é o identificador dentro de uma requisição GET ou POST no servidor.Vejamos algumas diferenças entre GET e POST: O método GET cria uma seqüência de consulta(query string) e a acrescenta à URL do script no servidor que manipula a solicitação. O método POST cria um par nome/valor que são passados no corpo da mensagem de pedido HTTP. -->

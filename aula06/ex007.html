@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #area{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >Interaja</div>
+    <!-- <div id="area" onclick="clique()" onmouseenter="entrar()" onmouseout="saiu()" >Interaja</div> -->
+    <!-- O método addEventListener() anexa um manipulador de eventos ao elemento especificado sem substituir os manipuladores de eventos existentes para que você possa adicionar vários manipuladores de eventos a um elemento. Você pode usar removeEventListener() para remover um evento -->
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clique)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+         
+        function clique(){  
+            a.innerText = "clicou"
+            a.style.background = "yellow"
+            a.style.color ="black"
+        }
+
+        function entrar(){
+            a.innerText ='entrou'
+            a.style.background ="green"
+        }
+   
+      function saiu(){
+          a.innerText = "saiu"
+          a.style.background = "red"
+      }
+    </script>
+</body>
+</html>

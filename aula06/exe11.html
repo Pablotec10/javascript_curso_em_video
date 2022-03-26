@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+</head>
+<body>
+    <h1>Horario</h1>
+    <input type="number" name="horario" id="horario">
+    <input type="button" value="resultado" onclick="hora()">
+    <div id="res"></div>
+    <script>
+        function hora(){
+
+        var horario = document.querySelector ("input#horario")
+        var res = document.querySelector ("#res")
+        // var saudacao = Number (horario.value)
+        var agora = new Date()
+         var saudacao = agora.getHours()
+        res.innerHTML = `a hora atual é ${saudacao}`
+
+        if ( saudacao >= 6 && saudacao <= 11){
+            res.innerHTML += `<p>bom dia</p>`
+            document.body.style.backgroundColor = "blue";
+            document.body.style.color = "black"
+           
+           
+        } else if ( saudacao >= 12 && saudacao <= 18){
+            res.innerHTML += `<p>boa tarde</p>`
+            document.body.style.backgroundColor = "green";
+            document.body.style.color = "black"
+          
+        } else if (saudacao > 18 && saudacao <=24 ) {
+            res.innerHTML += `<p>Boa noite</p>`
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white"
+        } else {
+            res.innerHTML += `<p>boa madrugada</p>`
+            document.body.style.backgroundColor = "yellow";
+            document.body.style.color = "black"
+        }
+          
+        
+    }
+    </script>
+</body>
+   
+</html>

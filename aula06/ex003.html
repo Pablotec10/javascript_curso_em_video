@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa</title>
+
+   <style>
+       body{
+           background-color: rgb(105, 105, 173);
+           color: white;
+           font: normal 20pt arial;
+       }
+
+       h1{
+           color: rgb(255, 212, 22);
+       }
+   </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>maldição</p>
+    <script>
+    //  alert ('deseja fechar a janela?')
+    //  confirm ('esta gostando de javacript?')
+   
+     
+    //  var nome =   prompt ('qual o seu nome?')
+    //  alert ("prazer " + nome)
+
+        var n1 = Number(window.prompt ('digite um número: ')) //string  -- -number.parseInt converte pra inteiro parseFloat pra flutuante, agora q o javascript decida so coloca number
+        var n2 = Number( window.prompt ('digite outro número'))
+           
+           var s = n1 + n2
+        //    window.alert (' a soma é' + s)//concatenacao
+
+        alert(`a soma entre ${n1} e ${n2} é igual a ${s}`)
+        //    var nome = 'pablo'
+        //   var  nota = '414'
+        //    `o aluno ${nome} com ${nota}` //template string serve pra concatena
+        var nome = prompt ('qual seu nome?')
+        document.write (`seu nome é : ${nome} <br>`)
+        document.write (`seu nome tem ${nome.length} letras <br>` )
+        //write escreve na tela -- writeln escreve em baixo
+        //lenght o tamanho da string
+        document.write (`seu nome em maiusculo é ${nome.toUpperCase()}`) //letras maiusculas toUppercase - minuscula toLowerCase()
+        
+        var n4 = 120.5
+        n4.toFixed(2)
+        //resultado é 2 casas decimais usando toFixed(2)
+ // pra converter . pra virgula usa n4.toFixed(2).replace('.', ',')
+    </script>
+</body>
+</html>
+
+<!-- s.length mostra o tamanho da string -->
